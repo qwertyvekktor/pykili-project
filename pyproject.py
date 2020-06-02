@@ -34,14 +34,14 @@ def search(update, context):
     if a == [] and b == []:
         update.message.reply_text('такого пакета нет')
     elif a != []:
-        for i in len(a):
-            for y in len(a[i]):
+        for i in range(0, len(a)):
+            for y in range(0, len(a[i])):
                 update.message.reply_text(a[i][y])
     elif a != []:
         for i in len(a):
             for y in len(a[i]):
-                if y == len(a[i]-1):
-                    time.sleep(20)
+                if y == len(a[i])-1:
+                    time.sleep(25)
                 update.message.reply_text(a[i][y])
 
 def command_rand(update, context):
