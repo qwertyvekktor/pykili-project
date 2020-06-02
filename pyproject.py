@@ -6,7 +6,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove, ParseMode)
 import socks
 
-TOKEN = '1176539991:AAH-KGQG4IkjybDq207wi-YYpBdDQ47J1UI'
+TOKEN = 'Token'
 
 def main():
     proxy_settings = {
