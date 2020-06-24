@@ -36,13 +36,14 @@ def search(update, context):
     elif a != []:
         for i in range(0, len(a)):
             for y in range(0, len(a[i])):
+                time.sleep(15)
                 update.message.reply_text(a[i][y])
-    elif a != []:
-        for i in len(a):
-            for y in len(a[i]):
-                if y == len(a[i])-1:
+    elif b != []:
+        for i in len(b):
+            for y in len(b[i]):
+                if y == len(b[i])-1:
                     time.sleep(25)
-                update.message.reply_text(a[i][y])
+                update.message.reply_text(b[i][y])
 
 def command_rand(update, context):
     a = rand_1()
